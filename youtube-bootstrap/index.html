@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>YouTube</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+    }
+    #keyb{
+        background-color: white;
+        border-left: none;
+      
+    }
+    #inp{
+        border-right: none;
+        border-top-left-radius:20px ;
+        border-bottom-left-radius:20px ;
+    }
+    #srch{
+        border-top-right-radius:20px ;
+        border-bottom-right-radius:20px ;
+        padding: 0px 20px;
+    }
+    .top-text-cent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media only screen and (max-width: 1300px) {
+        #ifr iframe{
+            width: 300px;
+           
+        }
+}
+    @media only screen and (max-width: 1300px) {
+        #ifr iframe{
+            width: 280px;
+            height: 250px ;
+         
+        }
+}
+    @media only screen and (max-width: 974px) {
+        #ifr iframe{
+            width: 700px;
+        }
+        .fa-buromobelexperte, .fa-bell{
+            display: none;
+        }
+}
+    @media only screen and (max-width: 441px) {
+        #ifr iframe{
+           width: 600px;
+        }
+}
+    @media only screen and (max-width: 310px) {
+        #ifr iframe{
+           width: 580px;
+        }
+}
+    
+</style>
+<body>
+    <div class="top-div d-flex">
+        <button class="btn text-title" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars"></i></button>
+
+
+<div class="offcanvas offcanvas-start " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="width: 300px;">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel"> <a href="#" class="nav-link fs-4 text-dark"><i class="fa-brands fa-youtube text-danger"></i> YouTube</a></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="links">
+        <div class="link">
+        <a href="#" class="nav-link fs-4 text-dark"><i class="fa-solid fa-house p-2"></i> <span>Home</span></a>
+        </div>
+        <div class="link">
+        <a href="#" class="nav-link fs-4  text-dark"> <i class="fa-solid fa-compass p-2"></i> <span>Explore</span></a>
+     </div>
+     <div class="link">
+       <a href="#" class="nav-link fs-4  text-dark"><i class="fa-regular fa-bookmark p-2"></i> <span>Subscription</span></a>
+     </div>
+     <br>
+     <hr>
+     </div>
+     <div class="links links-2">
+        <div class="link">
+           
+        <a href="#" class="nav-link fs-4  text-dark "><i class="fa-solid fa-photo-film p-2"></i> <span>Library</span></a>
+        </div>
+        <div class="link">
+        <a href="#" class="nav-link fs-4  text-dark"><i class="fa-sharp fa-solid fa-clock-rotate-left p-2"></i> <span>History</span></a>
+     </div>
+     <div class="link">
+       <a href="#" class="nav-link fs-4  text-dark"><i class="fa-sharp fa-solid fa-clock p-2"></i> <span>Watch later</span></a>
+     </div>
+     <div class="link">
+        <a href="#" class="nav-link fs-4  text-dark"><i class="fa-solid fa-thumbs-up p-2"></i><span>Like Videos</span></a>
+      </div>
+      <br>
+      <hr>
+     </div>
+     <div class="links subscription ">
+        <h4>Subscriptions</h4>
+        <div class="link">
+        <a href="#" class="nav-link fs-4  text-dark"><i class="fa-brands fa-tiktok p-2"></i><span>Music</span></a>
+        </div>
+        <div class="link">
+        <a href="#" class="nav-link fs-4  text-dark"><i class="fa-sharp fa-solid fa-medal p-2"></i><span>Sport</span></a>
+     </div>
+     <div class="link">
+       <a href="#" class="nav-link fs-4  text-dark" ><i class="fa-solid fa-gamepad p-2"></i><span>Gaming</span></a>
+     </div>
+     <div class="link">
+        <a href="#" class="nav-link fs-4  text-dark"><i class="fa-sharp fa-solid fa-clapperboard p-2"></i> <span>Films</span></a>
+      </div>
+      <br>
+      <hr>
+     </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>.....</p>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Try scrolling the rest of the page to see this option in action.</p>
+  </div>
+</div>
+<img src="youtube-logo.png" alt="" style="width: 140px;" >
+<div class="top-text-cent justify-content-center d-flex text-center container " >
+    <div class=" input-group  col-md-3 text-center  " style="width: 600px;">
+        <input type="text" class="form-control " aria-label="Dollar amount (with dot and two decimal places)" placeholder="Enter your request" required="" id="inp">
+        
+        <span class="input-group-text " id="keyb"><i class="fa-regular fa-keyboard"></i></span>
+        <span class="input-group-text" id="srch"><i class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+</div>
+<div class="left-top-icon fs-4 p-2 d-flex">
+    <i class="fa-solid fa-video p-2"></i>
+    <i class="fa-brands fa-buromobelexperte p-2"></i>
+    <i class="fa-regular fa-bell p-2"></i>
+</div>
+    </div>
+    <div class="container p-5" id="ifr">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/CQhUHmyJzwA?si=7OSExwnKVsM6cLUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>&nbsp;
+       
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/CZQ6mPt_WTc?si=5LQ7KMpEuPyPyl2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>&nbsp;
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/dt9DqqIOCi8?si=F_hxqOzmiKvHdbsW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>&nbsp;
+      </div>
+    <div class="container p-5" id="ifr">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/VchuKL44s6E?si=wqthQlhng8gahyC9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>&nbsp;
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/WYVBTz9QT6Y?si=V3rVzDc0EMHBEK3b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>&nbsp;
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/xk4_1vDrzzo?si=WvE5yz1pRRnPcQGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>&nbsp;
+      </div>
+
+</body>
+</html>
